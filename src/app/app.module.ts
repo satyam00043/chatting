@@ -1,6 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CometChatCallLogDetails, CometChatCallLogHistory, CometChatCallLogParticipants, CometChatCallLogRecordings, CometChatCallLogs, CometChatCallLogsWithDetails, CometChatContacts, CometChatConversations, CometChatConversationsWithMessages,  CometChatGroups, CometChatGroupsWithMessages, CometChatIncomingCall, CometChatMessageBubble, CometChatMessageComposer, CometChatMessageHeader, CometChatMessageInformation, CometChatMessageList, CometChatMessages, CometChatUsers, CometChatUsersWithMessages } from '@cometchat/chat-uikit-angular';
+import { CometChatCallButtonsComponent, CometChatCallLogDetails, CometChatCallLogHistory, CometChatCallLogParticipants, CometChatCallLogRecordings, CometChatCallLogs, CometChatCallLogsWithDetails, CometChatContacts, CometChatConversations, CometChatConversationsWithMessages,  CometChatGroups, CometChatGroupsWithMessages, CometChatIncomingCall, CometChatMessageBubble, CometChatMessageComposer, CometChatMessageHeader, CometChatMessageInformation, CometChatMessageList, CometChatMessages, CometChatUsers, CometChatUsersWithMessages } from '@cometchat/chat-uikit-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CallLogModule } from './call-log/call-log.module';
@@ -18,12 +18,14 @@ import { MessageDemoComponent } from './message/message-demo/message-demo.compon
 import { UsersModule } from './users/users.module';
 import { Call } from '@angular/compiler';
 import { CallModule } from './call/call.module';
+import { FormsComponent } from './forms/forms.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    MessageDemoComponent
+    MessageDemoComponent,
+    FormsComponent
    
   ],
   imports: [
@@ -51,7 +53,7 @@ import { CallModule } from './call/call.module';
     CometChatCallLogDetails,
     CometChatCallLogParticipants,
     CometChatCallLogRecordings,
-    CometChatCallLogHistory
+    CometChatCallLogHistory,
     
     
 

@@ -22,6 +22,7 @@ import { RouterModule } from '@angular/router';
     CometChatIncomingCall
 
   ],
-  bootstrap: [HomeComponent]
+  bootstrap: [HomeComponent],
+  exports:[HomeComponent]
 })
 export class HomeModule { }

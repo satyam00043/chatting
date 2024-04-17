@@ -12,6 +12,6 @@ import { CallButtonsComponent } from './call-buttons/call-buttons.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],exports:[CallComponent]
 })
 export class CallModule { }
